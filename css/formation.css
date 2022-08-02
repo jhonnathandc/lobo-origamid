@@ -1,0 +1,157 @@
+.formation .subtitle {
+  color: var(--color-6);
+  max-width: 5ch;
+}
+
+.formation-bg {
+  background: var(--color-0);
+}
+
+.formation {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.formation-text {
+  font: 400 1.5rem/1.33 "Fira Sans", sans-serif;
+  color: var(--color-5);
+  margin-bottom: 45px;
+  max-width: 40ch;
+}
+
+.formation-text strong {
+  color: var(--color-4);
+}
+
+.college {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.college-list {
+  flex: 1;
+  padding: 20px;
+  background: var(--color-7);
+  border: 2px solid var(--color-6);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.college-type {
+  display: block;
+  font: 400 0.875rem/1.43 "Fira Sans", sans-serif;
+  color: var(--color-5);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.college-course {
+  flex: 1;
+  position: relative;
+  font: 700 1.125rem/1.39 "Fira Sans", sans-serif;
+  color: var(--color-4);
+  margin-bottom: 35px;
+}
+
+.college-course::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 25px;
+  background: linear-gradient(#B6F829, #67DD0A);
+  position: absolute;
+  left: -26px;
+}
+
+.college-name {
+  font: 400 1.125rem/1.39 "Fira Sans", sans-serif;
+  color: var(--color-5);
+}
+
+.courses-intensive {
+  margin-bottom: 56px;
+}
+
+.courses-intensive h3, .languages h3 {
+  font: 700 0.875rem/1.14 "Fira Sans", sans-serif;
+  color: var(--color-8);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.courses-intensive h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url('../img/cursos.svg');
+  top: -5px;
+  left: -36px;
+}
+
+.courses-intensive ul, .languages ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.courses-intensive li {
+  font: 400 1.125rem/1.11 "Fira Sans", sans-serif;
+  color: var(--color-4);
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses-intensive li span, .languages li span {
+  color: var(--color-8);
+}
+
+.languages {
+  margin-bottom: 20px;
+}
+
+.languages h3 {
+  position: relative;
+}
+
+.languages h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url('../img/idiomas.svg');
+  top: -5px;
+  left: -36px;
+}
+
+.languages li {
+  font: 400 1.125rem/1.11 "Fira Sans", sans-serif;
+  color: var(--color-4);
+}
+
+@media (max-width: 800px) {
+  .formation {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .formation .subtitle {
+    color: var(--color-4);
+  }
+
+  .formation-text {
+    font: 400 1.25rem/1.33 "Fira Sans", sans-serif;
+  }
+
+  .courses-intensive h3::before, .languages h3::before {
+    position: relative;
+    left: 0;
+    margin-bottom: 5px;
+  }
+}

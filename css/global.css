@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Inter:wght@500&display=swap");
+
+:root {
+  --color-0: #141414;
+  --color-1: #525252;
+  --color-2: #e0e0e0;
+  --color-3: #f5f5f5;
+  --color-4: #ffffff;
+  --color-5: #a3a3a3;
+  --color-6: #000000;
+  --color-7: #090909;
+  --color-8: #8f8f8f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+  gap: 100px;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font: 700 9rem/1 "Fira Sans";
+  color: var(--color-2);
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    word-break: normal;
+    text-transform: capitalize;
+    color: var(--color-0);
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

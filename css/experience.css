@@ -1,0 +1,81 @@
+.info > p {
+  font: 400 1.5rem/1.33 "Fira Sans", sans-serif;
+  color: var(--color-1);
+  margin-bottom: 60px;
+  max-width: 40ch;
+}
+
+.info > p strong {
+  color: var(--color-0);
+}
+
+.work {
+  position: relative;
+  display: grid;
+  gap: 10px 60px;
+  grid-template-columns: 1fr 1fr;
+  background: var(--color-3);
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.work-year {
+  position: absolute;
+  font: 400 0.875rem/1.43 "Fira Sans", sans-serif;
+  top: 20px;
+  left: -60px;
+}
+
+.work-title {
+  position: relative;
+  font: 700 1.125rem/1.11 "Fira Sans", sans-serif;
+  color: var(--color-0);
+}
+
+.work h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  left: -24px;
+}
+
+.work-text {
+  font: 400 0.875rem/1.43 "Fira Sans", sans-serif;
+  color: var(--color-1);
+}
+
+.work-list {
+  display: flex;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.work-list li {
+  font: 400 0.875rem/1.71 "Fira Sans", sans-serif;
+  background: var(--color-4);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .info > p {
+    font-size: 1.25rem;
+  }
+
+  .work {
+    gap: 10px 30px;
+  }
+
+  .work-year {
+    color: var(--color-1);
+    order: 1;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+}

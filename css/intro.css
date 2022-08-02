@@ -1,0 +1,68 @@
+.intro {
+  align-items: center;
+}
+
+.intro img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.intro-desc h1 {
+  position: relative;
+  font: 700 4.5rem/1.11 "Fira Sans", sans-serif;
+  color: var(--color-0);
+  margin-bottom: 30px;
+}
+
+.intro-desc h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  background: url('../img/detalhe.svg');
+  top: -30px;
+  left: -27px;
+  z-index: -1;
+}
+
+.intro-desc p {
+  font: 400 1.5rem/1.5 "Fira Sans", sans-serif;
+  color: var(--color-1);
+}
+
+@media (max-width: 1000px) {
+  .intro-desc h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .intro-desc h1 {
+    font-size: 2rem;
+  }
+
+  .intro-desc h1::before {
+    background-position: center;
+    width: 30px;
+    height: 10px;
+    top: -15px;
+    left: 0px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro img {
+    display: none;
+  }
+}

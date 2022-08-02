@@ -1,0 +1,66 @@
+.footer-bg {
+  background: var(--color-6);
+}
+
+.footer {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  background: url('../img/detalhe.svg');
+  top: -64px;
+  left: 20px;
+}
+
+.footer-text {
+  font: 400 1.5rem/1.33 "Fira Sans", sans-serif;
+  color: var(--color-8);
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contact a {
+  font: 700 2.25rem/1.16 "Fira Sans", sans-serif;
+  color: var(--color-4);
+}
+
+.footer-copy {
+  font: 400 1.125rem/1.16 "Fira Sans", sans-serif;
+  color: var(--color-1);
+  grid-column: span 2;
+}
+
+@media (max-width: 800px) { 
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-contact {
+    margin-bottom: 30px;
+  }
+
+  .footer-contact a {
+    font-size: 1.5rem;
+  }
+
+  .footer-copy {
+    grid-column: 1;
+  }
+}
