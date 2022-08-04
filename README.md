@@ -24,7 +24,7 @@ Foi construído do zero e responsivo. Na estrutura foi utilizado HTML, na estili
 
 ```bash
     # Clone o projeto
-    $ git clone https://github.com/jhonnathandc/origamid/tree/main/lobo
+    $ git clone https://github.com/jhonnathandc/lobo-origamid
     
     # Entre no repositório
 
