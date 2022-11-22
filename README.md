@@ -4,7 +4,7 @@ Este projeto faz parte dos cursos de [Origamid](https://www.origamid.com), o des
 
 O projeto consiste em um portfólio pessoal.
 
-[Acesse o site aqui](https://jhonnathan-lobo.netlify.app/)
+[Acesse o site aqui](https://loboorigamid.vercel.app/)
 ## Demonstração
 
 ![Lobo Demo](https://user-images.githubusercontent.com/82620787/171970791-e3c17ce5-ca3a-495a-8741-06e0de367a32.png)
